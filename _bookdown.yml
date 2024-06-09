@@ -1,0 +1,30 @@
+book_filename: "ReporteGranjaTilapia"
+output_dir: docs
+delete_merged_file: true
+edit: https://github.com/reyesedgar/FamiliaTilapia/edit/main/%s
+view: https://github.com/reyesedgar/FamiliaTilapia/blob/main/%s
+language:
+  label:
+    fig: "Figura "
+    tab: "Tabla "
+    ref: "Referencia "
+  ui:
+    chapter_name: "Capítulo "
+    label:
+      fig: "Figura "
+      tab: "Tabla "
+      ref: "Referencia "
+
+rmd_files: [
+  'index.Rmd',
+  '01-intoduccion.Rmd',
+  '02-modelo_fisiografico.Rmd',
+  '03-modelo_meteorologico.Rmd',
+  '04-modelo_hidrologico.Rmd',
+  '05-conclusiones.Rmd',
+  '06-apendice.Rmd',
+  '07-referencias.Rmd'
+  ]
+
+
+before_chapter_script: "_common.R"

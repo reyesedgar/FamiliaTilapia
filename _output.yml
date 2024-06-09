@@ -1,0 +1,7 @@
+bookdown::gitbook:
+  df_print: kable
+  css: style.css
+  config:
+    toc:
+      before: |
+        <li><a href="./">Estudio Hidrológico</a></li>

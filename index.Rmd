@@ -1,0 +1,32 @@
+--- 
+title: ""
+author: ""
+date: "`r Sys.Date()`"
+bibliography:
+- book.bib
+- packages.bib
+biblio-style: apalike
+link-citations: true
+cover-image: logo.png
+description: Este es un estudio hidrológico de la Granja Tilapia
+site: bookdown::bookdown_site
+---
+
+<div style="text-align:center;">
+
+# Presentación {.unlisted .unnumbered}
+
+**Estudio hidrológico de La Granja Tilapia**
+
+**Centro de Investigación para la Restauración y Saturación del Suelo en colaboración con Regenerative Skills**
+
+**Elaboró: Ing. Edgar Reyes Vargas**
+
+
+<div style="display:flex; justify-content:center; align-items:center; margin-top:20px;">
+<img src="D:/CIRSS/proyectos/Tilapia/Hidrologia/logo.png" style="height:250px; margin-right:20px;">
+</div>
+
+</div>
+
+
