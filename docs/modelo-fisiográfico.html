@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 2 Modelo Fisiográfico | ReporteGranjaTilapia.knit</title>
+  <meta name="description" content="Este es un estudio hidrológico de la Granja Tilapia" />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 2 Modelo Fisiográfico | ReporteGranjaTilapia.knit" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="/logo.png" />
+  <meta property="og:description" content="Este es un estudio hidrológico de la Granja Tilapia" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 2 Modelo Fisiográfico | ReporteGranjaTilapia.knit" />
+  
+  <meta name="twitter:description" content="Este es un estudio hidrológico de la Granja Tilapia" />
+  <meta name="twitter:image" content="/logo.png" />
+
+<meta name="author" content="" />
+
+
+<meta name="date" content="2024-06-08" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="introducción.html"/>
+<link rel="next" href="modelo-meteorológico.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Estudio Hidrológico</a></li>
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="introducción.html"><a href="introducción.html"><i class="fa fa-check"></i><b>1</b> Introducción</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introducción.html"><a href="introducción.html#objetivo"><i class="fa fa-check"></i><b>1.1</b> Objetivo</a></li>
+<li class="chapter" data-level="1.2" data-path="introducción.html"><a href="introducción.html#normativa-aplicada"><i class="fa fa-check"></i><b>1.2</b> Normativa aplicada</a></li>
+<li class="chapter" data-level="1.3" data-path="introducción.html"><a href="introducción.html#localización-del-proyecto"><i class="fa fa-check"></i><b>1.3</b> Localización del proyecto</a></li>
+<li class="chapter" data-level="1.4" data-path="introducción.html"><a href="introducción.html#english-abstract"><i class="fa fa-check"></i><b>1.4</b> English abstract</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="modelo-fisiográfico.html"><a href="modelo-fisiográfico.html"><i class="fa fa-check"></i><b>2</b> Modelo Fisiográfico</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="modelo-fisiográfico.html"><a href="modelo-fisiográfico.html#topografía-documentada"><i class="fa fa-check"></i><b>2.1</b> Topografía documentada</a></li>
+<li class="chapter" data-level="2.2" data-path="modelo-fisiográfico.html"><a href="modelo-fisiográfico.html#delimitación-del-área-de-escurrimiento-y-red-hidrográfica"><i class="fa fa-check"></i><b>2.2</b> Delimitación del área de escurrimiento y red hidrográfica</a></li>
+<li class="chapter" data-level="2.3" data-path="modelo-fisiográfico.html"><a href="modelo-fisiográfico.html#descripción-del-relieve"><i class="fa fa-check"></i><b>2.3</b> Descripción del Relieve</a></li>
+<li class="chapter" data-level="2.4" data-path="modelo-fisiográfico.html"><a href="modelo-fisiográfico.html#red-de-drenaje"><i class="fa fa-check"></i><b>2.4</b> Red de drenaje</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="modelo-fisiográfico.html"><a href="modelo-fisiográfico.html#análisis-de-pendiente-del-cauce-principal-de-la-cuenca"><i class="fa fa-check"></i><b>2.4.1</b> Análisis de pendiente del cauce principal de la cuenca</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="modelo-fisiográfico.html"><a href="modelo-fisiográfico.html#estimación-del-coeficiente-de-escurrimiento"><i class="fa fa-check"></i><b>2.5</b> Estimación del coeficiente de escurrimiento</a></li>
+<li class="chapter" data-level="2.6" data-path="modelo-fisiográfico.html"><a href="modelo-fisiográfico.html#tiempos-de-estudio"><i class="fa fa-check"></i><b>2.6</b> Tiempos de estudio</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="modelo-fisiográfico.html"><a href="modelo-fisiográfico.html#tiempo-de-concentracion-por-kirpich"><i class="fa fa-check"></i><b>2.6.1</b> Tiempo de concentracion por kirpich</a></li>
+<li class="chapter" data-level="2.6.2" data-path="modelo-fisiográfico.html"><a href="modelo-fisiográfico.html#tiempo-de-concentracion-por-rowe"><i class="fa fa-check"></i><b>2.6.2</b> Tiempo de concentracion por Rowe</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="modelo-fisiográfico.html"><a href="modelo-fisiográfico.html#granja-familia-tilapia"><i class="fa fa-check"></i><b>2.7</b> Granja Familia Tilapia</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="modelo-meteorológico.html"><a href="modelo-meteorológico.html"><i class="fa fa-check"></i><b>3</b> Modelo meteorológico</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="modelo-meteorológico.html"><a href="modelo-meteorológico.html#selección-de-estaciones-climatológicas"><i class="fa fa-check"></i><b>3.1</b> Selección de estaciones climatológicas</a></li>
+<li class="chapter" data-level="3.2" data-path="modelo-meteorológico.html"><a href="modelo-meteorológico.html#homogenización-de-datos-climatológicos"><i class="fa fa-check"></i><b>3.2</b> Homogenización de datos climatológicos</a></li>
+<li class="chapter" data-level="3.3" data-path="modelo-meteorológico.html"><a href="modelo-meteorológico.html#funciones-de-las-distribuciones-probabilísticas-de-las-estaciones-climatológicas"><i class="fa fa-check"></i><b>3.3</b> Funciones de las distribuciones probabilísticas de las estaciones climatológicas</a></li>
+<li class="chapter" data-level="3.4" data-path="modelo-meteorológico.html"><a href="modelo-meteorológico.html#curvas-idtr-y-pdtr"><i class="fa fa-check"></i><b>3.4</b> Curvas IDTR y PDTR</a></li>
+<li class="chapter" data-level="3.5" data-path="modelo-meteorológico.html"><a href="modelo-meteorológico.html#hietograma"><i class="fa fa-check"></i><b>3.5</b> Hietograma</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="modelo-hidrológico.html"><a href="modelo-hidrológico.html"><i class="fa fa-check"></i><b>4</b> Modelo Hidrológico</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="modelo-hidrológico.html"><a href="modelo-hidrológico.html#cálculo-de-caudales"><i class="fa fa-check"></i><b>4.1</b> Cálculo de caudales</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="modelo-hidrológico.html"><a href="modelo-hidrológico.html#caudal-q-por-hut-hidrograma-uniforme-triangular"><i class="fa fa-check"></i><b>4.1.1</b> Caudal Q por HUT (Hidrograma Uniforme Triangular)</a></li>
+<li class="chapter" data-level="4.1.2" data-path="modelo-hidrológico.html"><a href="modelo-hidrológico.html#método-racional"><i class="fa fa-check"></i><b>4.1.2</b> MÉTODO RACIONAL</a></li>
+<li class="chapter" data-level="4.1.3" data-path="modelo-hidrológico.html"><a href="modelo-hidrológico.html#metodo-ven-te-chow"><i class="fa fa-check"></i><b>4.1.3</b> METODO VEN TE CHOW</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="modelo-hidrológico.html"><a href="modelo-hidrológico.html#hidrograma"><i class="fa fa-check"></i><b>4.2</b> HIDROGRAMA</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="conclusiones.html"><a href="conclusiones.html"><i class="fa fa-check"></i><b>5</b> Conclusiones</a></li>
+<li class="appendix"><span><b>Recursos adicionales</b></span></li>
+<li class="chapter" data-level="A" data-path="apéndice.html"><a href="apéndice.html"><i class="fa fa-check"></i><b>A</b> Apéndice</a>
+<ul>
+<li class="chapter" data-level="A.1" data-path="apéndice.html"><a href="apéndice.html#apéndice-del-modelo-fisiográfico"><i class="fa fa-check"></i><b>A.1</b> Apéndice del Modelo Fisiográfico</a></li>
+<li class="chapter" data-level="A.2" data-path="apéndice.html"><a href="apéndice.html#apéndice-del-modelo-meteorológico"><i class="fa fa-check"></i><b>A.2</b> Apéndice del Modelo Meteorológico</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="modelo-fisiográfico" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Capítulo 2</span> Modelo Fisiográfico<a href="modelo-fisiográfico.html#modelo-fisiográfico" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>El análisis fisiográfico es fundamental para caracterizar las propiedades físicas de una zona de estudio, incluyendo su topografía, red de drenaje, tipos de suelo y cobertura vegetal. Estos elementos determinan en gran medida el comportamiento hidrológico de la cuenca y su respuesta ante eventos de precipitación.</p>
+<div id="topografía-documentada" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Topografía documentada<a href="modelo-fisiográfico.html#topografía-documentada" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Para el presente estudio, se utilizó la información publicada en el geoportal <strong>Continuo de Elevaciones Mexicano 3.0</strong> con una resolución de 5 x 5 metros y datum ITRF08 edición 2014. Los datos fueron obtenidos en junio de 2024 y procesados en el Sistema de Referencia de Coordenadas EPSG:32614 WGS 84 / UTM zona 14N, en unidades métricas.</p>
+<div class="figure"><span style="display:block;" id="fig:figura-drenajepiem"></span>
+<img src="mapa%20drenaje%20pluvial%20piem.png" alt="Avenidas pluviales del Parque Industrial El Marqués" width="1754" />
+<p class="caption">
+Figura 2.1: Avenidas pluviales del Parque Industrial El Marqués
+</p>
+</div>
+<p>Al comparar el MDE con la imagen satelital se puede observar que no está actualizado ya que no corresponde al área de escurrimiento que genera el Parque Industrial El Marqués. Sin embargo se propone utilizar esta información para tener una aproximación del caudal que sirva para dimensionar las SbN que permitan mitigar los riesgos de inundación presentes en la granja.</p>
+</div>
+<div id="delimitación-del-área-de-escurrimiento-y-red-hidrográfica" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Delimitación del área de escurrimiento y red hidrográfica<a href="modelo-fisiográfico.html#delimitación-del-área-de-escurrimiento-y-red-hidrográfica" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="figure"><span style="display:block;" id="fig:figura-cuencadelim"></span>
+<img src="Mapa%20cuenca%20tilapia.png" alt="cuenca delimitada con QGIS 3.36" width="1754" />
+<p class="caption">
+Figura 2.2: Delimitación de la cuenca de aportación
+</p>
+</div>
+<p>La zona analizada, pertenece a la Región Hidrográfica Lerma - Santiago y forma parte de la cuenca abierta Río Laja. Presenta un <strong>área de drenaje</strong> de 1.04 km<sup>2</sup>, delimitada por un <strong>perímetro</strong> de 8.49 km y una <strong>longitud</strong> de 2.14 km, clasificándose como una cuenca <strong>Muy pequeña</strong> conforme a la tabla <a href="modelo-fisiográfico.html#tab:tabla-tamanocuencas">2.1</a>, de los <em>Apuntes de Hidrología Urbana</em> <span class="citation">(<a href="#ref-conde1995">Rivera and B. 1995</a>)</span>.</p>
+<table class=" lightable-classic-2" style="font-size: 12px; color: black; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:tabla-tamanocuencas">Tabla 2.1: </span>Clasificación de las cuencas según su tamaño
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Clasificacion
+</th>
+<th style="text-align:left;">
+Rango_tamaño_km2
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Muy pequeña
+</td>
+<td style="text-align:left;">
+&lt; 25
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pequeña
+</td>
+<td style="text-align:left;">
+25 - 250
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Intermedia pequeña
+</td>
+<td style="text-align:left;">
+250 - 500
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Intermedia grande
+</td>
+<td style="text-align:left;">
+500 - 2,500
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Grande
+</td>
+<td style="text-align:left;">
+2,500 - 5,000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Muy grande
+</td>
+<td style="text-align:left;">
+&gt; 5,000
+</td>
+</tr>
+</tbody>
+</table>
+<p>La <strong>elevación media de la cuenca</strong>, 1940.98 msnm, y la <strong>pendiente de la cuenca</strong>, 5.25 %, son valores que se obtienen
+consultando las estadísticas de los rasters generados en QGIS.</p>
+<p>El cauce principal, con una <strong>longitud</strong> de 1.84 km, nace en el Parque Industrial Bernardo Quintana y descarga en la localidad de Caro, específicamente en el drenaje de tormenta que recién construyeron.</p>
+</div>
+<div id="descripción-del-relieve" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Descripción del Relieve<a href="modelo-fisiográfico.html#descripción-del-relieve" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Para describir el relieve, se presenta la <strong>relación de enlongación</strong>, que caracteriza el relieve, cuya fórmula es <span class="math display">\[R_e = 1.128 \frac{\sqrt{\ A}}{L_m}\]</span> y el <strong>coeficiente de compacidad</strong>, que indica la geometría de la cuenca, cuya fórmula es <span class="math display">\[K_c = 0.282\frac{P}{\sqrt{A}}\]</span>.</p>
+<p>El valor de la relación de enlongación, R<sub>e</sub> es 0.5
+, por lo que consideramos que la cuenca tiene un relieve fuera de rango.</p>
+<p>El valor del coeficiente de compacidad, k<sub>c</sub> es 2.332046
+, por lo que consideramos que la cuenca tiene una forma alargada.</p>
+<p>El relieve influye en la velocidad del escurrimiento, la erosión del suelo y el transporte de sedimentos. Un relieve fuera de rango y una forma alargada implican una mayor concentración de los flujos de escorrentía en el cauce principal, lo que aumenta el riesgo de inundaciones repentinas.</p>
+</div>
+<div id="red-de-drenaje" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Red de drenaje<a href="modelo-fisiográfico.html#red-de-drenaje" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>La red de drenaje de una cuenca hidrográfica desempeña un papel crucial en el movimiento y transporte del agua superficial, subsuperficial y subterránea, tanto de manera temporal como permanente <span class="citation">(<a href="#ref-campos1998">Daniel F. Campos Aranda 1998</a>)</span>. Las características de esta red reflejan la eficiencia del sistema de drenaje de la cuenca y su capacidad para evacuar los excedentes de agua durante eventos de precipitación intensa.</p>
+<div id="análisis-de-pendiente-del-cauce-principal-de-la-cuenca" class="section level3 hasAnchor" number="2.4.1">
+<h3><span class="header-section-number">2.4.1</span> Análisis de pendiente del cauce principal de la cuenca<a href="modelo-fisiográfico.html#análisis-de-pendiente-del-cauce-principal-de-la-cuenca" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>El análisis del perfil longitudinal del cauce principal proporciona información sobre su pendiente, la cual influye en la velocidad del flujo y la capacidad de transporte de sedimentos.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura-cauceperfil"></span>
+<img src="perfil%20del%20cauce.png" alt="Perfil del cauce principal" width="600" />
+<p class="caption">
+Figura 2.3: Perfil del cauce principal
+</p>
+</div>
+<p>La pendiente del cauce principal se ha calculado usando tres diferentes fórmulas, las cuales se encuentran referenciadas en el manual de alcantarillado y saneamiento pluvial <span class="citation">(<a href="#ref-conagua2019">CONAGUA 2019</a>)</span>.</p>
+<ul>
+<li>Pendiente uniforme<br />
+</li>
+<li>Pendiente por elevaciones constantes de Taylor - Shwarz<br />
+</li>
+<li>Pendiente por longitudes constantes de Taylor - Shwarz</li>
+</ul>
+<div id="pendiente-uniforme" class="section level4 hasAnchor" number="2.4.1.1">
+<h4><span class="header-section-number">2.4.1.1</span> Pendiente uniforme<a href="modelo-fisiográfico.html#pendiente-uniforme" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Esta pendiente se calcula a partir de la longitud total del cauce y la diferencia de elevación entre su punto inicial y final. La fórmula es
+<span class="math display">\[ S_c = \frac{\Delta H}{L_{tc}} \label{eq:pendieteuniforme} \]</span></p>
+<p>La pendiente media del cauce principal calculada con la fórmula de pendiente uniforme es: 0.02981294 m/m</p>
+</div>
+<div id="pendiente-taylor-schwarz---elevaciones-constantes" class="section level4 hasAnchor" number="2.4.1.2">
+<h4><span class="header-section-number">2.4.1.2</span> Pendiente Taylor Schwarz - Elevaciones constantes<a href="modelo-fisiográfico.html#pendiente-taylor-schwarz---elevaciones-constantes" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Esta fórmula considera que el río está formado de canales con pendientes uniformes, por lo que se segmenta en tramos equivalentes para poder calcular la pendiente media.
+<span class="math display">\[S_{ec} = \left[\frac{l_t}{\sum_{i=1}^n\frac{l_i}{\sqrt{s_i}}} \right]^{2} \label{eq:pendietetaylorelev} \]</span></p>
+<p>La pendiente media del cauce principal calculada con la fórmula de Taylor Schwarz por elevaciones constantes es: 0.0256369 m/m</p>
+</div>
+<div id="pendiente-taylor-schwarz---longitudes-constantes" class="section level4 hasAnchor" number="2.4.1.3">
+<h4><span class="header-section-number">2.4.1.3</span> Pendiente Taylor Schwarz - Longitudes constantes<a href="modelo-fisiográfico.html#pendiente-taylor-schwarz---longitudes-constantes" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Esta fórmula considera que el río está formado de canales con pendientes uniformes, por lo que se segmenta en tramos equivalentes para poder calcular la pendiente media.
+<span class="math display">\[S_{lc} = \left[  \frac{n}{\sum_{i=1}^n\frac{1}{\sqrt{s_i}}} \right]^{2} \label{eq:pendietetaylorlong} \]</span></p>
+<p>La pendiente media del cauce principal calculada con la fórmula de Taylor Schwarz por longitudes constantes es: 0.029436 m/m</p>
+<p>Se hicieron corridas del modelo hidrológico con las pendientes de Taylor - Shwarz y uniforme, y se decidió usar la pendiente uniforme, debido a que genera resultados más conservadores.</p>
+<p>Las memorias de cálculo que generan las pendientes Taylor - Shwarz se encuentran en el Ápéndice.</p>
+<p>Las imágenes que se presentan a continuación muestran las condiciones actuales del drenaje de tormenta que pasa por un costado de la Granja La Familia Tilapia, el cual drena las aguas pluviales del Parque Industrial El Marqués. El drenaje comienza con unas rejillas circulares de 90 cm de diámetro, las cuales encauzan el agua en un canal abierto y al llegar a la escuela se convierte en un cajón pluvial de 2 metros x 2 metros.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura-drenajetormenta1"></span>
+<img src="drenajetormenta1.png" alt="Inicio del drenaje de tormenta" width="600" />
+<p class="caption">
+Figura 2.4: Inicio del drenaje de tormenta
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura-drenajetormenta2"></span>
+<img src="drenajetormenta2.png" alt="Canal drenaje de tormenta" width="600" />
+<p class="caption">
+Figura 2.5: Canal drenaje de tormenta
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura-drenajetormenta3"></span>
+<img src="drenajetormenta3.png" alt="Cajón pluvial" width="600" />
+<p class="caption">
+Figura 2.6: Cajón pluvial
+</p>
+</div>
+<p>Las imágenes que se presentan a continuación muestran las condiciones de las avenidas del Parque Industrial El Marqués, las cuales drenan las aguas pluviales y las dirigen al drenaje de tormenta.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura-piem2"></span>
+<img src="piem2.png" alt="Avenida que drena las aguas pluviales del Parque Industrial El Marqués" width="600" />
+<p class="caption">
+Figura 2.7: Avenida que drena las aguas pluviales del Parque Industrial El Marqués
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura-piem"></span>
+<img src="piem.png" alt="Fin de la avenida que drena las aguas pluviales del Parque Industrial El Marqués" width="600" />
+<p class="caption">
+Figura 2.8: Fin de la avenida que drena las aguas pluviales del Parque Industrial El Marqués
+</p>
+</div>
+<p>Los parámetros fisiográficos y geomorfológicos calculados se muestran en la siguiente tabla.</p>
+<table class=" lightable-classic-2" style="font-size: 12px; color: black; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:tabla-resumenparametrosfisio">Tabla 2.2: </span>Características de la cuenca y el cauce principal
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Variable
+</th>
+<th style="text-align:right;">
+Valor
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Área de la cuenca (km^2)
+</td>
+<td style="text-align:right;">
+1.0391
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Perímetro de la cuenca (km)
+</td>
+<td style="text-align:right;">
+8.4900
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Longitud de la cuenca (km)
+</td>
+<td style="text-align:right;">
+2.1440
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pendiente media de la cuenca (%)
+</td>
+<td style="text-align:right;">
+5.2500
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Elevación media de la cuenca (msnm)
+</td>
+<td style="text-align:right;">
+1940.9800
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Relación de elongación
+</td>
+<td style="text-align:right;">
+0.5000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Coeficiente de compacidad
+</td>
+<td style="text-align:right;">
+2.3320
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Elevación inicial del cauce (msnm)
+</td>
+<td style="text-align:right;">
+1976.4623
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Elevación final del cauce (msnm)
+</td>
+<td style="text-align:right;">
+1921.4867
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Longitud total del cauce (km)
+</td>
+<td style="text-align:right;">
+1.8440
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pendiente uniforme del cauce (%)
+</td>
+<td style="text-align:right;">
+2.9813
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="estimación-del-coeficiente-de-escurrimiento" class="section level2 hasAnchor" number="2.5">
+<h2><span class="header-section-number">2.5</span> Estimación del coeficiente de escurrimiento<a href="modelo-fisiográfico.html#estimación-del-coeficiente-de-escurrimiento" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Dadas las características de la cuenca en estudio, con un área de 1.04 km<sup>2</sup> y una naturaleza predominantemente urbana, se considera el uso del método racional, el cual es más adecuado para cuencas pequeñas y zonas urbanas. Por lo que en el estudio solo se usará el cálculo del <strong>Número de Curva</strong> para calcular el coeficiente de escurrimiento en La Granja.</p>
+</div>
+<div id="tiempos-de-estudio" class="section level2 hasAnchor" number="2.6">
+<h2><span class="header-section-number">2.6</span> Tiempos de estudio<a href="modelo-fisiográfico.html#tiempos-de-estudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>En el presente estudio, se han revisado y comparado diferentes fórmulas empíricas propuestas por diversos autores para el cálculo de T<sub>c</sub>. Si bien la fórmula de Kirpich es ampliamente aceptada a nivel internacional, es importante evaluar y comparar los resultados obtenidos con otros enfoques para garantizar la robustez y confiabilidad de los análisis.</p>
+<div id="tiempo-de-concentracion-por-kirpich" class="section level3 hasAnchor" number="2.6.1">
+<h3><span class="header-section-number">2.6.1</span> Tiempo de concentracion por kirpich<a href="modelo-fisiográfico.html#tiempo-de-concentracion-por-kirpich" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>La fórmula para calcular el tiempo por el autor Kirpich es la más usada a nivel global, su fórmula es
+<span class="math display">\[ t_{c} = 0.0003245 \left(\frac{l_t}{\sqrt{S_{tc}}}\right)^{0.77} \]</span>.</p>
+<p>El valor del tiempo de concentración calculado por Kirpich para toda el área de estudio es: 0.41 horas o 24.66 minutos .</p>
+</div>
+<div id="tiempo-de-concentracion-por-rowe" class="section level3 hasAnchor" number="2.6.2">
+<h3><span class="header-section-number">2.6.2</span> Tiempo de concentracion por Rowe<a href="modelo-fisiográfico.html#tiempo-de-concentracion-por-rowe" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>La fórmula para calcular el tiempo por el autor Rowe se define en <span class="citation">(<a href="#ref-conagua2019">CONAGUA 2019</a>, pág. 41)</span> con la siguiente expresión
+<span class="math display">\[ t_{c} =  \left(\frac{0.86l_t^{2}}{\sqrt{S_{lcm}}}\right)^{0.385} \]</span>.</p>
+<p>El valor del tiempo de concentración calculado por Rowe para toda el área de estudio es: 0.41 horas .</p>
+</div>
+</div>
+<div id="granja-familia-tilapia" class="section level2 hasAnchor" number="2.7">
+<h2><span class="header-section-number">2.7</span> Granja Familia Tilapia<a href="modelo-fisiográfico.html#granja-familia-tilapia" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Se estudia la fisiografía de La Granja para poder diseñar las SbN con las dimensiones y características apropiadas para conducir el agua pluvial excedente hacia zonas inundables que permitan un mejor manejo del agua.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura-ortomosaico"></span>
+<img src="Mapa%20Ortomosaico.png" alt="Ortomosaico de La Granja La Familia Tilapia" width="1754" />
+<p class="caption">
+Figura 2.9: Ortomosaico de La Granja La Familia Tilapia
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura-mdt"></span>
+<img src="Mapa%20MDT.png" alt="Modelo Digital del Terreno de La Granja La Familia Tilapia" width="1754" />
+<p class="caption">
+Figura 2.10: Modelo Digital del Terreno de La Granja La Familia Tilapia
+</p>
+</div>
+<p>Los trazos de las curvas de nivel sirven para determinar los canales-camino que se tendrán que diseñar para dirigir el agua hacia las zonas inundables.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura-pendientereclasificada"></span>
+<img src="Mapa%20pendiente%20reclasificada.png" alt="Prendiente reclasificada de La Granja La Familia Tilapia" width="1754" />
+<p class="caption">
+Figura 2.11: Prendiente reclasificada de La Granja La Familia Tilapia
+</p>
+</div>
+<p>El mapa de pendientes reclasificadas permite analizar que zonas son propensas a escurrir el agua con mayor velocidad y que zonas pueden ser inundables.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura-tipodesuelo"></span>
+<img src="Mapa%20tipo%20de%20suelo.png" alt="Tipo de suelo de La Granja La Familia Tilapia" width="1754" />
+<p class="caption">
+Figura 2.12: Tipo de suelo de La Granja La Familia Tilapia
+</p>
+</div>
+<p>El tipo de suelo es extraído del geoportal de la INEGI, especificamente la serie III de edafología, en donde se aprecia que La Granja se compone del suelo de tipo vertisol. Los vertisoles son suelos llamados pesados, se crean bajo condiciones alternadas de saturación-sequía, se forman grietas anchas, abundantes y profundas cuando están secos y tienen más de 30% de arcillas expandibles. Mediante un buen programa de labranza y drenaje son bastante fértiles para la agricultura por su alta capacidad de retención de humedad y sus propiedades de intercambio mineral con las plantas.</p>
+<p>Es necesario realizar pruebas de infiltración en el terreno para saber con mayor precisión las áreas idóneas para implemetar las SbN.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figura-ortomosaico2"></span>
+<img src="Mapa%20Ortomosaico%202.png" alt="Red de drenaje de La Granja La Familia Tilapia" width="1754" />
+<p class="caption">
+Figura 2.13: Red de drenaje de La Granja La Familia Tilapia
+</p>
+</div>
+<p>Se creó la red de drenaje de La Granja, generando cuencas de aportación que generen un escurrimiento aprovechable que pueda ser dirigido hacia zonas que actualmente están en desuso y se podrían aprovechar como áreas inundables.</p>
+<p>La cuenca de aportación 1 es la que tiene riesgos de inundación, debido a que cuando hay tormentas el canal abierto se desborda e inunda la cuenca de aportación 2 y algunas instalaciones en la cuenca de aportación 5.</p>
+
+</div>
+</div>
+<h3>Referencias<a href="referencias.html#referencias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-campos1998" class="csl-entry">
+Campos Aranda, Daniel F. 1998. <em>Procesos Del Ciclo Hidrológico</em>. 3rd ed. San Luis Potosí, México: Universidad Autónoma de San Luis Potosí.
+</div>
+<div id="ref-conagua2019" class="csl-entry">
+———. 2019. <em>Manual de Agua Potable, Alcantarillado y Saneamiento. Drenaje Pluvial Urbano</em>. México, D.F.: Secretaría de Medio Ambiente y Recursos Naturales. <a href="https://www.conagua.gob.mx">https://www.conagua.gob.mx</a>.
+</div>
+<div id="ref-conde1995" class="csl-entry">
+Rivera, Raúl Conde, and Juan Francisco Palacios B. 1995. <em>Apuntes de Hidrología Urbana</em>. México: Universidad Autónoma de Nuevo León, Facultad de Ingeniería Civil.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introducción.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="modelo-meteorológico.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/reyesedgar/FamiliaTilapia/edit/main/02-modelo_fisiografico.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/reyesedgar/FamiliaTilapia/blob/main/02-modelo_fisiografico.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
