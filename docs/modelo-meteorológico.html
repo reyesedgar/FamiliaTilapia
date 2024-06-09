@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Capítulo 3 Modelo meteorológico | ReporteGranjaTilapia.knit</title>
+  <title>Capítulo 3 Modelo meteorológico | FamiliaTilapia.knit</title>
   <meta name="description" content="Este es un estudio hidrológico de la Granja Tilapia" />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Capítulo 3 Modelo meteorológico | ReporteGranjaTilapia.knit" />
+  <meta property="og:title" content="Capítulo 3 Modelo meteorológico | FamiliaTilapia.knit" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="/logo.png" />
   <meta property="og:description" content="Este es un estudio hidrológico de la Granja Tilapia" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Capítulo 3 Modelo meteorológico | ReporteGranjaTilapia.knit" />
+  <meta name="twitter:title" content="Capítulo 3 Modelo meteorológico | FamiliaTilapia.knit" />
   
   <meta name="twitter:description" content="Este es un estudio hidrológico de la Granja Tilapia" />
   <meta name="twitter:image" content="/logo.png" />
@@ -665,7 +665,7 @@ El algoritmo también genera archivos que se pueden usar para cálculos posterio
 <pre><code>
 HOMOGEN() APPLICATION OUTPUT  (From R&#39;s contributed package &#39;climatol&#39; 4.1.0)
 
-=========== Homogenization of precipitacion, 1983-2019. (Sat Jun  8 22:27:04 2024)
+=========== Homogenization of precipitacion, 1983-2019. (Sat Jun  8 22:51:32 2024)
 
  Parameters: varcli=precipitacion, anyi=1983, anyf=2019, test=snht, nref=10 10 4, std=NA, swa=NA, ndec=1, niqd=4 1, dz.max=0.01, dz.min=-0.01, cumc=NA, wd=0 0 100, inht=25, sts=5, maxdif=0.05, maxite=999, force=FALSE, wz=0.001, mindat=NA, onlyQC=FALSE, annual=mean, ini=NA, na.strings=NA, vmin=NA, vmax=NA, hc.method=ward.D2, nclust=300, cutlev=NA, grdcol=#666666, mapcol=#666666, expl=FALSE, metad=FALSE, sufbrk=m, tinc=NA, tz=utc, rlemin=NA, rlemax=NA, cex=1.1, uni=NA, raway=TRUE, graphics=TRUE, verb=TRUE, logf=TRUE, snht1=NA, snht2=NA, gp=NA
 
@@ -750,7 +750,7 @@ Prescribed convergence reached
 
 Last series readjustment (please, be patient...) 
 
-======== End of the homogenization process, after 2.15 secs 
+======== End of the homogenization process, after 2.04 secs 
 
 ----------- Final calculations :
 
@@ -1802,7 +1802,7 @@ X22067.2
 </table>
 <p>Se genera el gráfico <a href="modelo-meteorológico.html#fig:figura-precipesthomogen">3.2</a> para visualizar la distribución temporal de los datos climatológicos de las 6 estaciones homogenizadas.</p>
 <div class="figure"><span style="display:block;" id="fig:figura-precipesthomogen"></span>
-<img src="ReporteGranjaTilapia_files/figure-html/figura-precipesthomogen-1.png" alt="Distribución de precipitaciones homogenizadas" width="672" />
+<img src="FamiliaTilapia_files/figure-html/figura-precipesthomogen-1.png" alt="Distribución de precipitaciones homogenizadas" width="672" />
 <p class="caption">
 Figura 3.2: Distribución de precipitaciones homogenizadas
 </p>
@@ -1854,7 +1854,7 @@ X-squared = 1184, df = 1152, p-value = 0.25</p>
 </ul>
 <p>En este capítulo, se presentará la información completa de una estación climatológica como ejemplo. Para el resto de las estaciones solo se presenta la tabla con la distribución de probabilidad ajustada a los parámetros de la función recomendada por MSClaio2008. La información completa de las 5 estaciones restantes se encuentra en el <a href="apéndice.html#apéndice-del-modelo-meteorológico">Apéndice del Modelo Meteorológico</a>.</p>
 <p>Se presenta la información de la <strong>estación Santa Teresa</strong>.</p>
-<p><img src="ReporteGranjaTilapia_files/figure-html/unnamed-chunk-36-1.png" width="672" /></p>
+<p><img src="FamiliaTilapia_files/figure-html/unnamed-chunk-36-1.png" width="672" /></p>
 <pre><code>
 ------------------------
 Akaike Information Criterion (AIC):
@@ -1882,7 +1882,7 @@ Chosen distributions:
 whose Maximum-Likelihood parameters are:
 NORM parameters of x:  49.91351  19.46211  
 P3 parameters of log(x):  4.758897  -0.2155336  4.342562  </code></pre>
-<p><img src="ReporteGranjaTilapia_files/figure-html/unnamed-chunk-36-2.png" width="672" /></p>
+<p><img src="FamiliaTilapia_files/figure-html/unnamed-chunk-36-2.png" width="672" /></p>
 <table class=" lightable-classic-2" style="font-size: 12px; color: black; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
 <span id="tab:unnamed-chunk-40">Tabla 3.3: </span>Comparación de las distribuciones probabilísticas de precipitaciones de la estación Santa Teresa
@@ -2151,14 +2151,14 @@ mm/hr</p>
 <p>F: 1.241427</p>
 <p>Con los parámetros calculados se procede a graficar las curvas IDTR.</p>
 <div class="figure"><span style="display:block;" id="fig:figura-IDTR"></span>
-<img src="ReporteGranjaTilapia_files/figure-html/figura-IDTR-1.png" alt="Gráfico de las curvas Intensidad - Duración -  Tiempo de Retorno" width="672" />
+<img src="FamiliaTilapia_files/figure-html/figura-IDTR-1.png" alt="Gráfico de las curvas Intensidad - Duración -  Tiempo de Retorno" width="672" />
 <p class="caption">
 Figura 3.4: Gráfico de las curvas Intensidad - Duración - Tiempo de Retorno
 </p>
 </div>
 <p>Después se hacen los cálculos necesarios para obtener las curvas PDTR. La memoria de cálculo se encuentra en el <a href="apéndice.html#apéndice-del-modelo-meteorológico">Apéndice del Modelo Meteorológico</a>.</p>
 <div class="figure"><span style="display:block;" id="fig:figura-PDTR"></span>
-<img src="ReporteGranjaTilapia_files/figure-html/figura-PDTR-1.png" alt="Gráfico de las curvas Precipitación - Duración -  Tiempo de Retorno" width="672" />
+<img src="FamiliaTilapia_files/figure-html/figura-PDTR-1.png" alt="Gráfico de las curvas Precipitación - Duración -  Tiempo de Retorno" width="672" />
 <p class="caption">
 Figura 3.5: Gráfico de las curvas Precipitación - Duración - Tiempo de Retorno
 </p>
@@ -2170,7 +2170,7 @@ Figura 3.5: Gráfico de las curvas Precipitación - Duración - Tiempo de Retorn
 <p>Existen dos tipos fundamentales de tormentas de diseño: históricas y sintéticas o hipotéticas. Las tormentas históricas son eventos severos o extraordinarios que han ocurrido en el pasado y fueron registrados, pudiendo estar bien documentados en relación con los problemas y daños causados a las áreas urbanas y sus sistemas de drenaje. Por otro lado, las tormentas sintéticas o hipotéticas se obtienen a partir del estudio y generalización de un gran número de tormentas severas observadas, con el objetivo de estimar un hietograma que represente las características de las tormentas en la zona de estudio <span class="citation">(<a href="#ref-campos2010">Aranda 2010</a>)</span>.</p>
 <p>En el presente estudio, se obtendrá el hietograma de diseño utilizando la metodología propuesta por el NRCS. El período de retorno se selecciona con base en en la tabla del Anexo 1 del memorando de CONAGUA de 2017 <span class="citation">(<a href="#ref-conagua2017">CONAGUA 2017</a>)</span>. El período de retorno que marca el memorando para el punto de control de la zona de estudio es de 10 años para redes de drenaje de zonas industriales.</p>
 <div class="figure">
-<img src="ReporteGranjaTilapia_files/figure-html/hietograma,%20figura-hietograma-1.png" alt="Hietograma para el Periodo de Retorno 100 años" width="672" />
+<img src="FamiliaTilapia_files/figure-html/hietograma,%20figura-hietograma-1.png" alt="Hietograma para el Periodo de Retorno 100 años" width="672" />
 <p class="caption">
 (#fig:hietograma, figura-hietograma)Hietograma para el Periodo de Retorno 100 años
 </p>
